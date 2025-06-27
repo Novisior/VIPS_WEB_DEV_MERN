@@ -13,16 +13,6 @@
 //fumvtions
 
 // // how js code runs 
-// let a=10;
-// let b=20;
-// console.log(a);
-// function sumo2(p1,p2){ //parameter
-//     let ans=p1+p2;
-//     return ans;
-//  }
-// let a1=12;
-// let a2=14;
-// console.log(sumo2(a1,a2)); //5,4 are arguments
 
 // //eerror
 // console.log(aa);      // with let it give error that referential rirror called before intialise
@@ -35,18 +25,27 @@
 // var bb=20;
 // console.log(bb);
 
+// var a=10;
+// var b=20;
+// console.log(a);
+// function sumo2(p1,p2){ //parameter
+//     var ans=p1+p2;
+//     return ans;
+//  }
+// var a1=12;
+// var a2=14;
+// console.log(sumo2(a1,a2)); //5,4 are arguments
 
 
 // var x=300;
-
 // function f1(){
-//     let a=20;
-//     let b =30;
+//     var a=20;
+//     var b =30;
 //     function f2(){
-//         let c=50;
-//         let a=60; // shadowing
+//         var c=50;
+//         var a=60; // shadowing
 //         function f3(){
-//             let d = 80;
+//             var d = 80;
 //             return a+b+c+d+x;
 //         }
 //         return f3();
@@ -64,9 +63,10 @@
 //     console.log("hello set interval");
 // },2000);
 
-for (let i = 0; i<=5; i++){
-    setTimeout(()=>{                       // gives 6 ,6,6,6,6,6 because of all gives same value after 2 sec when use var aand 0,1,2,3,4,5 with let
+for (var i = 0; i<=5; i++){
+    setTimeout(function(){                       // gives 6 ,6,6,6,6,6 because of all gives same value after 2 sec when use var aand 0,1,2,3,4,5 with let
         console.log(i);
         },2000);
 }
 
+// hello
