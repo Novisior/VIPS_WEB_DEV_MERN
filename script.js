@@ -63,10 +63,48 @@
 //     console.log("hello set interval");
 // },2000);
 
-for (var i = 0; i<=5; i++){
-    setTimeout(function(){                       // gives 6 ,6,6,6,6,6 because of all gives same value after 2 sec when use var aand 0,1,2,3,4,5 with let
-        console.log(i);
-        },2000);
-}
+// for (var i = 0; i<=5; i++){
+//     setTimeout(function(){                       // gives 6 ,6,6,6,6,6 because of all gives same value after 2 sec when use var aand 0,1,2,3,4,5 with let
+//         console.log(i);
+//         },2000);
+// }
 
-// hello
+// console.log("hi ");
+// setTimeout(function (){
+//     console.log("hello set timeout");
+//     },5000);
+// console.log("end");             
+// // output 
+// // hi 
+// // end
+// // hello set timeout
+// // because of asynchronous nature of setTimeout function it waits for 5 sec and then prints the output so it does not block the execution of code and hence prints hi and end first and then hello set timeout after 5 sec
+
+// {
+//     // compound statement
+// }
+
+var a = 10;
+var b = 20;
+var c = 30;
+
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+{
+    var d = 40;
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+}
+// output
+// 10
+// 20
+// 30
+// undefined
+// 10
+// 20
+// 30
+// 40
