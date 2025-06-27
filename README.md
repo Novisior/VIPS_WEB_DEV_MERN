@@ -1,1 +1,1 @@
-Hi this is my repositary
+Hi this is my repository
