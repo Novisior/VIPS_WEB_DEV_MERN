@@ -73,38 +73,38 @@
 // }, 15000);
 
 
-// to make call back
-function menu(cb){
-    console.log("menu")
-    setTimeout(cb, 5000);
-}
+// // to make call back
+// function menu(cb){
+//     console.log("menu")
+//     setTimeout(cb, 5000);
+// }
 
-function order(cb){
-    console.log("order")
-    setTimeout(cb, 2000);
+// function order(cb){
+//     console.log("order")
+//     setTimeout(cb, 2000);
 
-}
-function dinner(cb){
-    console.log("dinner");
-    setTimeout(cb, 10000);
-}
-function sauf(cb){
-    console.log("sauf")
-    setTimeout(cb, 1000);
-}
+// }
+// function dinner(cb){
+//     console.log("dinner");
+//     setTimeout(cb, 10000);
+// }
+// function sauf(cb){
+//     console.log("sauf")
+//     setTimeout(cb, 1000);
+// }
 
-function pay(){
-setTimeout(()=>{
-    console.log("pay")
-}, 15000);
-}
+// function pay(){
+// setTimeout(()=>{
+//     console.log("pay")
+// }, 15000);
+// }
 
-menu(()=>{
-    order(()=>{
-        dinner(()=>{
-            sauf(()=>{
-                pay();
-            })
-        })
-    })
-});
+// menu(()=>{
+//     order(()=>{
+//         dinner(()=>{
+//             sauf(()=>{
+//                 pay();
+//             })
+//         })
+//     })
+// });
